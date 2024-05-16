@@ -12,12 +12,14 @@ def predict(
     Intake_Type: str,
     Intake_Condition: str,
     Sex_upon_Intake: str,
+    Animal_Group: str,
     Age_Upon_Intake_Days: int
 ):
     model_data_dict = {
             "Intake_Type": Intake_Type,
             "Intake_Condition": Intake_Condition,
             "Sex_upon_Intake": Sex_upon_Intake,
+            "Animal_Group": Animal_Group,
             "Age_Upon_Intake_Days": Age_Upon_Intake_Days
         }
 
