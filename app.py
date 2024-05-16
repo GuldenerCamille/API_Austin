@@ -32,6 +32,7 @@ with col1:
         with col12:
             Sex_upon_Intake = st.text_input(label="**Sex upon Intake :**")
             Age_Upon_Intake_Days = st.number_input(label="**Age in days :**", step = 1)
+            Animal_Group = st.number_input(label="**Animal Group :**", step = 1)
             status_validated = st.text_input(label="**status_validated**")
 
         model_data_dict = {
@@ -39,6 +40,7 @@ with col1:
             "Intake_Condition": Intake_Condition,
             "Animal_Type" : Animal_Type,
             "Sex_upon_Intake": Sex_upon_Intake,
+            "Animal_Group": Animal_Group,
             "Age_Upon_Intake_Days": Age_Upon_Intake_Days
         }
 
@@ -52,6 +54,7 @@ if st.button("Get Prediction"):
         "Intake_Condition": Intake_Condition,
         "Animal_Type": Animal_Type,
         "Sex_upon_Intake": Sex_upon_Intake,
+        "Animal Group": Animal_Group,
         "Age_Upon_Intake_Days": Age_Upon_Intake_Days
     }
 
